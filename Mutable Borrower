@@ -1,0 +1,14 @@
+fn main() {
+    let mut number = 5;
+
+
+    let r1 = &number;
+    let r2 = &number;
+    println!("r1 = {}, r2 = {}", r1, r2);
+
+    let r3 = &mut number;
+    println!("Mutable borrow after modification: {}", r3);
+
+    let r4 = &number;
+    println!("Immutable borrow again: {}", r4);
+}
